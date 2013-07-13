@@ -1,0 +1,630 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Yahoo! Password Helper: Verify your identity</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://s.yimg.com/lq/lib/common/css/reset-fonts-grids_2.1.2.css">
+  <style type="text/css">
+  
+h1, h2, h3, h4{
+  font-family:arial;
+  font-weight:bold;
+  color:#000000;
+}
+h4{
+  font-size:122%;
+}
+h3{
+  font-size:136%;
+}
+h2{
+  font-size:144%;
+}
+h1{
+  font-size:167%;
+}
+strong{font-weight:bold;}
+.subHeadError-odd h1, .subHeadError-even h1{
+  padding-left:2em;
+}
+.subHeadError-odd p, .subHeadError-even p{
+  padding-left:3.5em;
+}
+div.subHeadError-odd, div.subHeadError-even{
+  border-bottom:1px solid #ccc;
+  background:transparent url("https://s.yimg.com/lq/i/nt/ic/ut/bsc/cautionmetro28_1.gif") no-repeat left;
+}
+.errMsg{
+  color:red;
+}
+a {
+  color: #0c3d9c;
+}
+
+input[type=text], input[type=password] {
+	padding: 4px 2px;
+}
+
+#yregmst {
+	padding-right:3px;
+	line-height:12px;
+	font-family:verdana,geneva,sans-serif;
+	font-size:77%;
+}
+
+.return{
+  margin-top:20px;
+  padding:15px;
+}
+.return .right{
+  float:right;
+  padding:0 2em;
+  width:280px;
+}
+
+#saveBtn {
+background: transparent url(https://s.yimg.com/lq/i/reg/reg_gradients.png) repeat scroll 0 0;
+border: 1px solid #F2A322;
+color: #333;
+font-weight: bold;
+font-size: 116%;
+height: 2.54em;
+right: 24.5em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+margin-top: 1.3em;
+margin-left: .5em;
+}
+#exitBtn {
+background: transparent url(https://s.yimg.com/lq/i/reg/reg_gradients.png) repeat scroll 0 bottom;
+border: 1px solid #ccc;
+color: #999;
+font-weight: bold;
+font-size: 116%;
+height: 2.54em;
+right: 24.5em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+margin-top: 1.3em;
+margin-right: .5em;
+}
+
+#meter {
+font-size:0px;
+height:10px;
+padding:3px 3px 5px 0px;
+margin:1px;
+width:100%;
+}
+#meter div {
+border:1px solid #636363;
+float:left;
+font-size:0px;
+height:7px;
+line-height:0pt;
+margin:2px;
+padding:0pt;
+width:35px;
+}
+#meter #meter1 {
+margin-left:0pt;
+}
+#meter #meter4 {
+margin-right:0pt;
+}
+#meter_bar {
+background-color:red;
+border:1px solid black;
+height:5px;
+margin:0px;
+padding:0px;
+}
+#meter_help {
+background:transparent url(https://s.yimg.com/lq/i/us/plus/gr/alrt_s.gif) no-repeat scroll 0pt;
+color:#EA3307;
+display:none;
+margin:0px;
+padding:2px 0pt 2px 20px;
+position:absolute;
+}
+#meter_help p {
+margin:0pt;
+padding:2px;
+}
+#caps_txt {
+border:1px solid red;
+color:red;
+display:block;
+float:left;
+}
+#meter_tag {
+float:left;
+margin:5px 3px;
+color:#888888;
+font-size:77%;
+margin:0pt;
+top:0pt;
+z-index:1000;
+}
+#meter_tag #meter {
+font-size:100%;
+height:10px;
+padding:0pt;
+width:7.2em;
+}
+#meter_tag span {
+bottom:0px;
+position:absolute;
+right:1px;
+}
+#meter_tag #meter div {
+border-color:#AAAAAA;
+font-size:100%;
+height:6px;
+margin:0pt;
+width:1.4em;
+}
+#meter_tag #meter #meter1 {
+margin:0pt;
+}
+#meter_tag #meter #meter2, #meter_tag #meter #meter3, #meter_tag #meter #meter4 {
+margin-left:0.2em;
+}
+#fldSetNewPw1 #strengthHolder h3{
+text-align:left;
+color:#505050;
+font-size:85%;
+font-weight:normal;
+}
+
+html, body {
+  background:#fbfbfb url(https://s.yimg.com/lq/i/reg/ar_bg.png) repeat-y 50% 0; 
+  margin:0; 
+  padding:0; 
+  height:100%;
+}
+#doc {
+  padding:0;
+  margin:0 auto;
+  position:relative;
+  right:1px;
+  min-height:100%;
+  width:770px;
+}
+#hd{
+  position:relative;
+  left:1px;
+}
+#contContainer{
+  clear:both;
+  margin:0 auto;
+  padding:0 15px;
+}
+.hd {
+  margin:0 0 2em 0; 
+  border-bottom:1px solid #ccc; 
+  padding:20px 0 12px 0;
+  clear:both;
+}
+.clear{
+  clear:both;
+  line-height:0;
+}
+#bd{
+  padding-bottom:5em;
+  padding-top:1px;
+}
+#ft{
+  font-size:85%;
+  position:absolute;
+  bottom:0px;
+  width:770px;
+  margin:0 auto;
+}
+#doc #ft{
+  padding:0.5em 0;
+}
+#ft p{
+  color:#000;
+  line-height:130%; 
+  margin:0;
+}
+#doc #mem_ft{
+  border:none;
+}
+#imgA img{
+  padding-bottom:1.5em;
+}
+#fldSetNewPw1 #strengthHolder{width:33%;}
+#fldSetNewPw1 #strengthHolder, #fldSetNewPw1 .helperTxt, #fldSetYID .helperTxt{text-align:left;}
+#fldSetNewPw1 h3, #fldSetNewPw2 h3, #fldSetYID h3{
+	text-align:right;
+	font-size:114%;	
+	padding-bottom:0.5em;
+}
+#fldSetNewPw2 .yui-u, #strengthHolder .yui-u, #fldSetYID .yui-u{
+	padding-bottom:0.75em;
+}
+#pwdInputs input{
+  margin-bottom:0.5em;
+}
+#pwdInstructions{
+  font-size:85%;
+  color:#AFAFBF;
+  font-style:italic;
+  text-align:left;
+}
+#rightMost{
+  float:left;
+  margin-left:2em;
+}
+legend {
+	border-bottom: 1px solid #ccc;
+	width: 70%;
+	font-weight: bold;
+	color: #639
+}
+fieldset div {
+	float: left;
+	padding: 1px 4px
+}
+.errorfield {
+	font-size: 86%;
+	width: 180px
+}
+.errormessage .errorfield {
+	color: #f00
+}
+.errormessage input {
+	background-color: #ffebeb
+}
+.errormessage .icon {
+	height: 16px;
+	width: 16px;
+	background-image: url("https://s.yimg.com/lq/i/nt/ic/ut/bsc/cautionmetro16_1.gif");
+	background-repeat: no-repeat;
+}
+.infomessage .icon {
+	height: 16px;
+	width: 16px;
+	background-image: url("https://s.yimg.com/lq/i/nt/ic/ut/bsc/info_metro16_1.gif");
+	background-repeat: no-repeat;
+}
+.clearall {
+	clear: both;
+	float: none;
+	padding: 0;
+	margin: 0
+}
+.label {
+	width: 12em;
+	text-align: right;
+	padding-right: 1em;
+	font-size: 100%;
+}
+#testLogger {
+	margin-bottom: 1em
+}
+#testLogger .yui3-console .yui3-console-title {
+	border: 0 none;
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	text-transform: none
+}
+#testLogger .yui3-console .yui3-console-entry-meta {
+	margin: 0
+}
+#PasswordConfEntryError {
+	padding-left: 100px
+}
+#pwdtooltip {
+	margin-top: 4px;
+	clear: both;
+	font-size: 80%;
+	color: #999;
+	width: 200px
+}
+#credentials {
+	margin-bottom: 100px
+}
+#pwdmlabel {
+	margin-left: 1px;
+	font-size: .6em
+}
+#pwdm1,#pwdm2,#pwdm3,#pwdm4 {
+	border: 1px solid #999;
+	padding: 3px 8px;
+	margin-left: 4px
+}
+.meterGood {
+	background-color: #4AE817
+}
+.meterFair {
+	background-color: yellow
+}
+.meterBad {
+	background-color: red
+}
+.meterEmpty {
+	background-color: white
+}
+.bullets {
+	font-size: 100%;
+	list-style-type: disc;
+	margin: 2px 0 2px 16px
+}
+.bullets li {
+	margin: 2px 0
+}
+
+.hd {
+        padding: 1em 0 1em 3em;
+        background: transparent url("https://s.yimg.com/lq/i/nt/ic/ut/bsc/successmetro28_1.gif") no-repeat left;
+}
+
+
+
+  </style>
+<style type="text/css">
+.helperHolder{
+  overflow:visible;
+}
+.helperTxt{
+  background-color:#FFF;
+  background-image:url('https://s.yimg.com/lq/i/nt/ic/ut/bsc/info_metro16_1.gif');
+  background-repeat:no-repeat;
+  background-position:top left;
+  font-size: 85%;
+  width:200px;
+  height:20px;
+  padding-left:25px;
+  margin:0;
+  background-color:#fff;
+  float:right;
+  overflow:visible;
+  display:none;
+}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+.helperTxt{
+  visibility:hidden;
+  display:block;
+}
+</style>
+<![endif]-->
+
+    
+<script type="text/javascript">if(top != self){top.location.href = "http://www.yahoo.com" }</script>
+<script type="text/javascript" src="https://s.yimg.com/combo?yui-ssl/3.3.0/build/yui/yui-min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="doc" class="yui-t7">
+      <div id="hd">
+<!-- intl = us, spaceid = 150002299 offset = 0 position = HEAD -->
+
+<!-- static header --> 
+
+<link type="text/css" rel="stylesheet" href="https://s.yimg.com/lq/lib/uh/15/css/uh_slim_ssl-1.0.5.css">
+<style type="text/css">
+#ygmatip{display:none;position:absolute;left:8px;top:28px;border:1px solid #c3c3c3;padding:5px;background-color:#fcfcfc;text-align:left;z-index:25;}
+#mepanel{position:relative;}
+em{font-style:normal;}
+</style>
+
+<div id="mem_hd">
+    <div id="ygma">
+        <div id="ygmaheader">
+            <div class="bd sp">
+                <div id="yahoo" class="ygmaclr">
+                    <div id="ygmabot">
+                        <a id="ygmalogo" href="http://www.yahoo.com"><img id="ygmalogoimg" src="https://s.yimg.com/lq/i/brand/purplelogo/base/us.gif" alt="Yahoo!" name="ygmalogoimg"></a>
+                    </div>                    <div id="mepanel">
+                        <ul id="mepanel-nav">
+                            <li class="me1">
+                                <a href="http://www.yahoo.com" target="_blank">Yahoo!</a>
+                            </li>
+                            <li class="me2">
+                                <a id="ygmahelp" href="http://help.yahoo.com/l/en-us/yahoo/edit/" target="_blank">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+      <div id="bd">
+      	<div id="contContainer">
+  
+		<form id="pgForm" name="pgForm" action="/forgot" method="post" autocomplete="off">
+<div class='hd ' id='hdLine'>
+<h1 id='hd1'>We have successfully verified your identity.</h1>
+</div>	<input type="hidden" id="done" name="done" value="http://www.yahoo.com">
+	<input type="hidden" id="intl" name="intl" value="us">
+	<input type="hidden" id="login" name="login" value="yqa_jaya_arflow19">
+	<input type="hidden" id=".partner" name=".partner" value="reg">
+	<input type="hidden" id=".pwtoken" name=".pwtoken" value="">
+	<input type="hidden" id=".src" name=".src" value="">
+	<input type="hidden" id="stage" name="stage" value="fe200">
+	<input type="hidden" id="z" name="z" value="_ZfPyruCxcjG_z4oWybuxjQKlgXLS80ByUIadhDjrDxpE34.itp5jqXEgj7wVTSqT8DboLx2mm7MuG5ajJ2GZEWhSDLcVdwd115IFPRnX0Kckmcq.x2uOFBLOROElgH5Z2oKQJukG0qi5WZwG7TWcm4JSRv7FtzjEGB3tR6lgAVKHUUqLsIzXn47Q2Hy_6u.1zawBDcSZA9v0YLE3eMfB3uCONoLMgeuXyxSiyY_iVcBcB2AxLt_1TAa3P6Uv0Gzwhoii7VXGw6Tmdp9VQ2kwYh83aKUcw.LEwym6EUyh4GfjqcMcdj0mTTBEYJ40t3YL51lYWuUcgvVNQB9xay5QM5G9JA2_XNxDbCqo3_Ssil.W3tq_vDaoGxGM57iZeqEmf6NgAutUwqzDjIAgPupSxGnKdvZQBtyjucRA9P5MX8tl8enP4GFWwxaE.T.gBof2XFYDN.yQKbE9pVfQaRjEChi6EqLoCdhl3mOpWioQJJW4kmJWqfmNJFtwd3A5MwMsgeDkfZg2SQehHAwUsefx8zpOQp2dN7ijzoKsDpAeyB6Dmg1s9NjbVBd">
+	<input type="hidden" id="fname" name="fname" value="A">
+	<input type="hidden" id="lname" name="lname" value="B">
+	<input type="hidden" id="yid" name="yid" value="yqa_jaya_arflow19">
+<!-- clip start -->
+<p>Enter a new password for your Yahoo! account. </p><br>
+<fieldset id="credentials">
+	<div id="PasswordEntryField">
+		<div class="label">
+			<label for="newpw1">New password:</label>
+		</div>
+		<div id="PasswordEntryInput">
+				<input type="password" name="newpw1" id="newpw1" size="30"/><br style="clear:all;">
+			<div id="pwdtooltip" style="display: none;">
+				Capitalization matters. Use 6 to 32 characters.  Don’t use your name or Yahoo! ID.
+			</div>
+		</div>
+		<div id="PasswordMeter">
+			<div id="pwdmlabel">Password Strength</div>
+			<div class="clearall"></div>
+			<div id="pwdm1"></div>
+			<div id="pwdm2"></div>
+			<div id="pwdm3"></div>
+			<div id="pwdm4"></div>
+		</div>
+		<div id="PasswordEntryError">
+			<div id="PasswordEntryErrorIcon" class="icon"></div>
+			<div id="PasswordEntryErrorMsg" class="errorfield"></div>
+		</div>					
+	</div>
+	<div class="clearall"></div><br>
+	<div id="PasswordConfEntryField" >
+		<div class="label">
+			<label for="newpw2">Retype the new password:</label>
+		</div>
+		<div id="PasswordConfEntryInput">
+			<input type="password" name="newpw2" id="newpw2" size="30"/>
+		</div>
+		<div id="PasswordConfEntryError">
+			<div id="PasswordConfEntryErrorIcon" class="icon"></div>
+			<div id="PasswordConfEntryErrorMsg" class="errorfield"></div>
+		</div>										
+	</div>
+</fieldset>
+<!-- clip end -->	
+
+
+<div class="return">
+  	<div class='right'>
+	  <input type="button" name="exitBtn" id="exitBtn" value="Cancel" title="" tabindex="10" border="0">
+	  <input type="submit" name="saveBtn" id="saveBtn" value="Next" title="" tabindex="10" border="0">
+	</div>
+	<div class="clear" style="clear:both;"></div>
+</div>
+    <script language="javascript" type="text/javascript">
+        YUI().use('node', function(Y) {
+
+                var cancelButton = function(e) {
+			var partner, src, intl, done;
+                        var doneNode = Y.one("#done");
+			if (doneNode) {
+                        	done = encodeURIComponent(doneNode.get("value"));
+			}
+                        var partnerNode = Y.one("#partner");
+			if (partnerNode) {
+				partner = partnerNode.get('value');
+			}
+                        var srcNode = Y.one("#src");
+			if (srcNode) {
+				src = srcNode.get('value');
+			}
+                        var intlNode = Y.one("#intl");
+			if (intlNode) {
+				intl = intlNode.get('value');
+			}
+			
+                        var exitLink = "/forgotroot?intl="+intl+"&src="+src+"&done="+done+"&partner="+partner+"&problem=exit&saveBtn=Next";
+                        window.location.href = exitLink;
+                };
+
+                Y.on("click", cancelButton, "#exitBtn");
+
+        });
+    </script>
+
+
+    
+		</form>
+		</div>
+      </div><!-- end id=bd -->
+      <div id="ft">
+<!-- intl = us, spaceid = 150002299 offset = 0 position = FOOT -->
+
+<!-- static footer --> 
+
+<style type="text/css">
+#mem_ft {border-top:1px solid #CCCCCC;font-size:10px;margin-top:1em;padding-top:0.5em;font-family:arial,helvetica,clean,sans-serif;text-align:center}
+#mem_ft p {margin:0;padding:0;}
+#mem_ft .notice {color: #ff0000;}
+</style>
+<!--[if IE]> 
+<style type="text/css">
+#mem_ft p {margin:0.25em 0 0 0;}
+</style>
+<![endif]--> 
+<div id="mem_ft">
+    <p>
+        
+        Copyright © 2013 Yahoo! Inc. All rights reserved. 
+        <a href="https://legalredirect.yahoo.com/copyright?intl=us" target='_blank'>Copyright/IP Policy</a> | 
+        <a href="https://legalredirect.yahoo.com/utos?intl=us" target='_blank'>Terms of Service</a> | 
+        <a href="http://security.yahoo.com" target="_blank">Guide to Online Security</a> |
+	<a href="https://legalredirect.yahoo.com/privacy?intl=us" target='_blank'>Privacy Policy</a>
+    </p>    </p>
+</div>      </div><!-- end id=ft -->
+    </div><!-- end id=doc -->
+
+<!-- clip2 start -->
+<script language="javascript" type="text/javascript">   
+	YUI().use('node', function(Y) {
+		config = {
+			tests: 			"off",
+			logging:   		"off",
+			password1:		Y.one("#newpw1"),
+			password2: 		Y.one("#newpw2"),
+			yid:			Y.one("#login"),
+			fname:			Y.one("#fname"),
+			lname:			Y.one("#lname")
+		};
+	});
+</script>
+<script type="text/javascript">
+	var errorCode = {
+	        empty:                  "This Information is Required",
+	        pwdcontainsyid:         "Your password cannot include your Yahoo! ID",
+	        pwdcontainsfname:       "Your password cannot include any part of your name",
+	        pwdcontainslname:       "Your password cannot include any part of your name",
+	        pwdwronglength:         "Your password must be 6 to 32 characters long",
+	        pwdcontainspwdword:     "Your password cannot include the word 'password'",
+	        pwdnotmatch:            "The passwords you entered do not match.  Please try again.",
+		pwdweak:		"Your password is weak. Please choose a stronger password."			
+	};
+
+	var infoMessages = {
+	        passwordfld :           "For a more secure password:" +
+	                                "<ul class='bullets'>"+
+	                                "<li>Use both letters and numbers</li>"+
+	                                "<li>Add special characters (such as @, ?, %)</li>"+
+	                                "<li>Mix capital and lowercase letters</li></ul>",
+	        password_tooshort:      "Too short",
+	        password_mediocre:      "Weak",
+	        password_strong:        "Strong",
+	        password_strongest:     "Very strong",
+	        password_invalid:       "Password invalid",
+	        password_initialState:  "Password Strength"
+	};
+</script>
+<script type="text/javascript" src="https://s.yimg.com/zz/combo?sf/ar/1.0.6/js/base.js&sf/ar/1.0.9/js/password.js&sf/ar/1.0.6/js/tips.js&sf/ar/1.0.10/js/changepassword.js"></script>
+
+<!-- clip2 end -->
+  </body>
+</html>
+ <script language=javascript>
+if(window.yzq_p==null)document.write("<scr"+"ipt language=javascript src=https://s.yimg.com/lq/lib/bc/bc_2.0.5.js></scr"+"ipt>");
+</script><script language=javascript>
+if(window.yzq_p)yzq_p('P=skRGzwrS0i6SqUFzUYif_wAB2JE2nlGJ21wACzwg&T=18eltgnt6%2fX%3d1367989084%2fE%3d150002299%2fR%3dregst%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d1230356681%2fH%3dc2VjdXJlPSJ0cnVlIiBzZXJ2ZUlkPSJza1JHendyUzBpNlNxVUZ6VVlpZl93QUIySkUybmxHSjIxd0FDendnIiBzaXRlSWQ9IjQ0NjU1NTEiIHRTdG1wPSIxMzY3OTg5MDg0OTQyNTgzIiA-%2fS%3d1%2fJ%3d2ED2D20A');
+if(window.yzq_s)yzq_s();
+</script><noscript><img width=1 height=1 alt="" src="https://us.bc.yahoo.com/b?P=skRGzwrS0i6SqUFzUYif_wAB2JE2nlGJ21wACzwg&T=18jafr29c%2fX%3d1367989084%2fE%3d150002299%2fR%3dregst%2fK%3d5%2fV%3d3.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d2955060701%2fH%3dc2VjdXJlPSJ0cnVlIiBzZXJ2ZUlkPSJza1JHendyUzBpNlNxVUZ6VVlpZl93QUIySkUybmxHSjIxd0FDendnIiBzaXRlSWQ9IjQ0NjU1NTEiIHRTdG1wPSIxMzY3OTg5MDg0OTQyNTgzIiA-%2fQ%3d-1%2fS%3d1%2fJ%3d2ED2D20A"></noscript><script language=javascript>
+(function(){window.xzq_p=function(R){M=R};window.xzq_svr=function(R){J=R};function F(S){var T=document;if(T.xzq_i==null){T.xzq_i=new Array();T.xzq_i.c=0}var R=T.xzq_i;R[++R.c]=new Image();R[R.c].src=S}window.xzq_sr=function(){var S=window;var Y=S.xzq_d;if(Y==null){return }if(J==null){return }var T=J+M;if(T.length>P){C();return }var X="";var U=0;var W=Math.random();var V=(Y.hasOwnProperty!=null);var R;for(R in Y){if(typeof Y[R]=="string"){if(V&&!Y.hasOwnProperty(R)){continue}if(T.length+X.length+Y[R].length<=P){X+=Y[R]}else{if(T.length+Y[R].length>P){}else{U++;N(T,X,U,W);X=Y[R]}}}}if(U){U++}N(T,X,U,W);C()};function N(R,U,S,T){if(U.length>0){R+="&al="}F(R+U+"&s="+S+"&r="+T)}function C(){window.xzq_d=null;M=null;J=null}function K(R){xzq_sr()}function B(R){xzq_sr()}function L(U,V,W){if(W){var R=W.toString();var T=U;var Y=R.match(new RegExp("\\\\(([^\\\\)]*)\\\\)"));Y=(Y[1].length>0?Y[1]:"e");T=T.replace(new RegExp("\\\\([^\\\\)]*\\\\)","g"),"("+Y+")");if(R.indexOf(T)<0){var X=R.indexOf("{");if(X>0){R=R.substring(X,R.length)}else{return W}R=R.replace(new RegExp("([^a-zA-Z0-9$_])this([^a-zA-Z0-9$_])","g"),"$1xzq_this$2");var Z=T+";var rv = f( "+Y+",this);";var S="{var a0 = '"+Y+"';var ofb = '"+escape(R)+"' ;var f = new Function( a0, 'xzq_this', unescape(ofb));"+Z+"return rv;}";return new Function(Y,S)}else{return W}}return V}window.xzq_eh=function(){if(E||I){this.onload=L("xzq_onload(e)",K,this.onload,0);if(E&&typeof (this.onbeforeunload)!=O){this.onbeforeunload=L("xzq_dobeforeunload(e)",B,this.onbeforeunload,0)}}};window.xzq_s=function(){setTimeout("xzq_sr()",1)};var J=null;var M=null;var Q=navigator.appName;var H=navigator.appVersion;var G=navigator.userAgent;var A=parseInt(H);var D=Q.indexOf("Microsoft");var E=D!=-1&&A>=4;var I=(Q.indexOf("Netscape")!=-1||Q.indexOf("Opera")!=-1)&&A>=4;var O="undefined";var P=2000})();
+</script><script language=javascript>
+if(window.xzq_svr)xzq_svr('https://csc.beap.bc.yahoo.com/');
+if(window.xzq_p)xzq_p('yi?bv=1.0.0&bs=(135o3g1h0(gid$skRGzwrS0i6SqUFzUYif_wAB2JE2nlGJ21wACzwg,st$1367989084942583,si$4465551,sp$150002299,pv$1,v$2.0))&t=J_3-D_3');
+if(window.xzq_s)xzq_s();
+</script><noscript><img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(135o3g1h0(gid$skRGzwrS0i6SqUFzUYif_wAB2JE2nlGJ21wACzwg,st$1367989084942583,si$4465551,sp$150002299,pv$1,v$2.0))&t=J_3-D_3"></noscript>

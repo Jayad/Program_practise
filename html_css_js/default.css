@@ -1,0 +1,150 @@
+/* global */
+html { background:#fbfbfb none repeat scroll 0%; }
+body{ background:#fbfbfb url(https://s.yimg.com/lq/i/reg/bg_gradient22.png) repeat-x;margin:0;padding:0;height:100%; font-family:arial; color: #000;}	
+#hd, #bd, #ft {background-color: #fff; border-left: 1px solid #aaa; border-right: 1px solid #aaa; height:100%;}
+#bd {padding:0 1.5em;}
+#ft {padding: 1em; border-bottom: 1px solid #aaa;}
+.js-clickable { text-decoration: none; cursor: pointer; }
+.indicatorRun { background: url(https://s.yimg.com/lq/i/rss/spinner_grey.gif); }
+/* .errorCondition { background-image: url(https://s.yimg.com/lq/i/reg/error_arrow_bg.gif); background-position: right 6px; background-repeat: no-repeat;} */
+.secDiv {margin-bottom:1em;/*padding:1.5em 0;border-bottom:1px dotted #c0c0c0;*/}  
+#pwqaViewDiv, #pwqaEditDiv {margin:0 2em 1em;}
+#pwqaViewDiv .yui-gf .yui-u.first, #pwqaEditDiv .yui-gf .yui-u.first {text-align:right;margin:0.5em 0;}
+#pwqaViewDiv .yui-gf .yui-u, #pwqaEditDiv .yui-gf .yui-u {margin:0.5em 0;}
+#changePwqas {padding-left: 10.5em;}
+.answer {color: #5a5a5a;}
+#spwq1, #spwq2, #pwq1, #pwq2, #pwa1, #pwa2 {width:100%;} 
+#arBtns {border-top:1px solid #ccc;border-bottom:1px solid #ccc;border-left: 1px solid #aaa;border-right: 1px solid #aaa;padding:1em 1.5em;text-align:right;}
+#co {display:none;}
+#NextBtn {padding:0 2em;}
+strong {font-weight:bold;}
+.red {color: #f00;}
+#savePwqasI, #savePwqasI img { width: 16px; }
+#saveCancelPwqas {margin:1em 10.5em;}
+#pwqaContainer{margin-left:5%;width:65%;}
+
+/* header */
+#adHdr { padding: 15px 0px 15px 0px; width: 100%;}
+h1, h2 {font-weight:bold;}
+h1 {font-size:146.5%;}
+h2 {font-size:108%;margin-bottom:0.5em;}
+h3 {font-size:116%;}
+h4 {font-size:100%;}
+h1 {color:#631266;}
+.taglineHdr {padding-bottom:1em;}
+#srMobile h1, #title h1 {margin-bottom: 0.5em;}
+#title h1.inError {margin-bottom: 0; margin-left:20px;}
+
+
+/* no script */
+#noScript { padding: 15px; background-color: #eaeaea; width: 85%; margin-bottom: 15px;}
+#noScript h1 { color: #f00; }
+
+/* table */
+#ccTbl, #phTbl {width: 100%;}
+#ccTbl tr, #phTbl tr {height:3em;/*height:50px*/;width:100%;color:#5A5A5A;font-size:100%;}
+#ccTbl .tblHr { font-size: 100%;}
+#ccTbl .tblHdr, #phTbl .tblHdr { font-size:77%; color: #631266; border: 0; line-height: 1.5;}
+#ccTbl tr#tblLast { border:0; padding-bottom: 75px;}
+#tblLast img { margin-left: 75px;}
+#tblLast td:hover { text-decoration: none; cursor: pointer;}
+#ccTbl td.dotBorder, #phTbl td.dotBorder {border-bottom: 1px dotted #c0c0c0; }
+
+/* tbl cells */
+.statusItem { font-size: 85%; color: #ff0033; padding-left: 14px;}
+.statusHdr {padding-left: 10px;}
+.radioSel { text-align: center; width: 35px; padding: 0px 25px 0px 25px;}
+.emailItem {width: 220px; padding-left: 0px;}
+#phTbl td.emailItem { direction: ltr; }
+.emailPad { display: block; padding: 10px 4px 10px 5px; width: 100%;}
+.emailHdr {width:220px; padding-left: 5px;}
+.deleteLink {text-align: right; padding-right: 12px;}
+.toolTip { width: 250px; }
+.toolTip span { display: block; font-size: 85%; padding-left: 6px;}
+.hidden { visibility: hidden; }
+#ph1, #ph2, #ph3 {width:3em;}
+
+/* add input */
+#addLinks { text-align: right; padding-right: 10px;}
+#addLinks a { text-align: right;}
+#addLink { padding-left: 3px; text-decoration: none;}
+#tblAdd input { padding: 5px 5px 0px 5px; margin-left: 0px; height: 18px; border: 1px solid #c0c0c0; width: 150px; color: #000; font-size: 100%; }
+#tblAdd .fieldValInit {font-size: 85%; color: #b1b1b1; }
+#ccBtns { text-align: center; padding: 25px 0px 25px; border-top: 1px dotted #c0c0c0; width: 95%;}
+#saveStatus { width: 16px; height: 16px; }
+
+/* dialogs */
+#jsErrorDialog .hd, #verifyMobileSentDialog .hd, #verifySentDialog .hd, #deleteConfirmDialog .hd, #unsavedDataDialog .hd, #learnMoreDialog .hd {font-size: 108%; font-weight: bold; color: #631266; text-align: left;}
+#deleteBody {padding: 15px 0px 20px 0px; width: 58%; text-align: left; margin: 0px auto 0px auto; }
+#verifyBody {padding: 15px 0px 20px 0px; width: 85%; text-align: left; margin: 0px auto 0px auto;}
+#verifyMobileBody {padding: 15px 0px 20px 0px; width: 89%; text-align: left; margin: 0px 0px 0px 32px;}
+#jsErrorBody {padding: 15px 0px 20px 0px; width: 85%; text-align: left; margin: 0px auto 0px auto;}
+#GotoBtn, #DeleteNowBtn { margin-right: 11px;}
+#learnMoreDialog p {text-align:left;}
+
+/* mobile verification code input */
+#verifyMobileCode { padding: 5px 5px 0px 5px; margin-left: 0px; height: 18px; border: 1px solid #c0c0c0; width: 175px; color: #000; font-size: 100%; }
+#verificationInputP {padding-top: 12px;}
+#resendMobileIndicator {padding-left: 3px;}
+#enterCodeLabel {padding: 0 3px 7px 0;}
+#mobileNum {font-weight: bold;}
+#receivedCode {display: block; padding-bottom: 20px;}
+#enterCodeLabel {display: block;}
+#verifyMobileError {display: none;}
+.errorState {background-color: #ffd9d9;}
+.Error {width:100%; overflow:hidden;}
+.ErrorIcon {background: transparent url(https://s.yimg.com/lq/i/us/soc/prflsuite/sprite_01.png) no-repeat scroll 0 -170px;display:inline;float:left;font-size:93%;margin-left:6em;width:5%;}
+.errorTxt {font-size: 93%;color:red;float:right;width:72%;}
+#mobileImg { height: 64px; width: 50px; margin-bottom: 100px; float: left; margin-right: 23px; background: transparent url(https://s.yimg.com/lq/i/membership/ccm/phonepic.png) no-repeat scroll;}
+
+/* AR Data Update - No aging */
+.pwqaHelpTxt {color:#666666;font-size:85%;}
+.subHdr {font-size: 123.1%; color: #631266;}
+#pwqaErrorDiv {color: red; margin-left: 10.5em;}
+#pwqaErrorDiv ul li{list-style-type:disc;margin-left: 15px;}
+#pwqaErrorDiv h3 {font-size:100%;font-weight:bold;margin-bottom: 10px;padding-left: 25px;background: transparent url(https://s.yimg.com/lq/i/us/soc/prflsuite/sprite_01.png) no-repeat scroll 0 -170px;}
+
+a {color: #2565d1;text-decoration:none;}
+/* custom buttons */
+.yui-skin-sam #jsErrorDialog .default, .yui-skin-sam #jsErrorDialog .default .first-child,
+.yui-skin-sam #unsavedDataDialog .default, .yui-skin-sam #unsavedDataDialog .default .first-child, 
+.yui-skin-sam #deleteConfirmDialog .default, .yui-skin-sam #deleteConfirmDialog .default .first-child, 
+.yui-skin-sam #verifySentDialog .default, .yui-skin-sam #verifySentDialog .default .first-child,
+.yui-skin-sam #verifyMobileSentDialog .default, .yui-skin-sam #verifyMobileSentDialog .default .first-child,
+.yui-skin-sam #SaveBtn .first-child, .yui-skin-sam #SaveBtn {
+	border-color: #f4b229;
+	background:transparent url(https://s.yimg.com/lq/i/membership/ccm/button_bg.png) repeat-x scroll top left;
+}
+.yui-skin-sam #jsErroDialog, .yui-skin-sam #jsErrorDialog .first-child, 
+.yui-skin-sam #deleteConfirmDialog, .yui-skin-sam #deleteConfirmDialog .first-child, 
+.yui-skin-sam #verifySentDialog, .yui-skin-sam #verifySentDialog .first-child,
+.yui-skin-sam #verifyMobileSentDialog, .yui-skin-sam #verifyMobileSentDialog .first-child,
+.yui-skin-sam #CancelBtn, .yui-skin-sam #CancelBtn .first-child {
+	background:transparent url(https://s.yimg.com/lq/i/membership/ccm/button_bg_grey.png) repeat-x scroll top left;
+	border-color: #a9a9a9;
+}
+.yui-skin-sam .yui-button button {
+	font-size: 100%;
+	font-weight: bold;
+	min-height:2.37em;
+	line-height: 2.37;
+	padding: 0px 30px;
+}
+
+.yui-skin-sam .yui-dialog .ft span.default button {
+	color: #000;
+}
+.yui-skin-sam .yui-dialog .ft .button-group{
+	text-align: center;
+}
+.yui-skin-sam .yui-dialog .ft {
+	padding-bottom: 25px;
+}
+.bracketTxt {font-weight:normal;font-size:93%;color:#666;}
+.newPhone { width: 15em; float: left; }
+.lt-ie7 #verifyMobileBody {padding-bottom: 0px;}
+.lt-ie7 #pwqaErrorDiv h3, .lt-ie7 #verifyMobileError .ErrorIcon { background-image: url(https://s.yimg.com/lq/i/us/soc/prflsuite/sprite_01_ie6.png); }
+
+#yucs {
+   width: 940px !important;
+}

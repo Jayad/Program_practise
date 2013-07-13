@@ -1,0 +1,4 @@
+/*regex*/
+function escapeRegExp(string){
+  return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}

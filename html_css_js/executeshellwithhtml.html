@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+function executeCommands(inputparms)
+{
+/* Instantiate the Shell object and invoke its execute method.*/
+
+var oShell = new ActiveXObject("Shell.Application");
+
+var commandtoRun = "C:\\WINDOWS\\NOTEPAD.EXE";
+if (inputparms != "")
+{
+var commandParms = document.form.filename.value;
+}
+
+/* Invoke the execute method. */
+oShell.ShellExecute(commandtoRun, commandParms,"", "open", "1");
+}
+</script>
+</head>
+<body>
+<Input type="hidden" name="filename" />
+<input type="button" value="NotePad" onClick="executeCommands(' + hasPARMS + ')" />
+</body>
+</html> 

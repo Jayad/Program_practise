@@ -1,0 +1,16 @@
+.return { text-align: right; }
+.rtl .return { text-align: left; }
+#saveBtn { cursor: pointer; }
+#remind, #togglehowdiff { border: none; padding: none; background-color: transparent; cursor: pointer; }
+.nodecor { text-decoration: none; }
+a.nodecor:link, a.nodecor:visited, #remind, #togglehowdiff { color: #00f; }
+a.nodecor:active, a.nodecor:hover { color: #00f; }
+.additions { margin: 0.75em 0.5em; }
+.hd, .rtl .hd { background-image: url('https://s.yimg.com/lq/i/nt/ic/ut/bsc/warn28_1.gif'); zoom: 1; }
+.errorfield { width: 300px; }
+#howdiff { border: 1px solid #ccc; font-size: smaller; background-color: #eff; color: #777; padding: 0.5em; 
+  border-radius: .5em; 
+  -moz-border-radius: .5em; 
+  -webkit-border-radius: .5em; 
+}
+

@@ -1,0 +1,29 @@
+
+html {
+  height: 100%;
+  background: white;
+}
+body {
+  background-image: -webkit-linear-gradient(top, #f1f1f1 0%, #efefef 20%);
+  background-image: -moz-linear-gradient(top, #f1f1f1 0%, #efefef 20%);
+  background-image: -o-linear-gradient(top, #f1f1f1 0%, #efefef 20%);
+  background-image: -ms-linear-gradient(top, #f1f1f1 0%, #efefef 20%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#efefef', GradientType=0);
+  font-size:1em;
+  font-family: Helvetica Neue, Arial, Clean, Sans-Serif;
+  font-weight: 200;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+  min-height: 100%;
+  min-width: 63.75em;
+  height:auto !important;
+  height:100%;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 0 8px;
+    position: relative;
+    padding-top: 80px;
+}

@@ -1,0 +1,45 @@
+geturl //will fetch url . curl call to fetch url details
+o/p 3 links
+recursive for i=10;
+geturl(); 
+
+page a>products page
+url
+
+curl -v "google.com"
+
+
+$visted[$link] =true;
+
+$var = new DOMDocument();
+
+function get()
+{
+$method = geturl();
+curl "www.volly.com";
+data is fetched 
+array = {"1"= "abc.com", "2"="xyz.com}
+
+$var="voylla.com"
+
+
+array ={"1"="$var/t/jewellery", "2"="$var/t/jewellery/necklaces", "3"=$var/t/accessories/bags", "4"="$var/t/accessories"};
+}
+
+
+map([2,4,6], square);
+
+for(int i=0;i<n;i++)
+	a[i]=a[i]*a[i];
+
+for(int i=0;i<n;i++)
+a[i]=a[i]+1;
+
+for(int i=0;i<n;i++)
+a[i]=a[i].length();
+
+function pointer using
+array of any types
+
+http://jsfiddle.net/zbcmn/11/
+satish.srinivasan@voylla.com

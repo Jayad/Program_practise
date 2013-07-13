@@ -1,0 +1,667 @@
+body,
+input {
+	font-family: "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	color: #343D47;
+	background: #efefef;
+}
+
+#content {
+	position: relative;
+	margin: 0px auto;
+	padding: 0px 8px 0px 8px;
+	max-width: 640px;
+}
+
+#header {
+	padding: 20px 0px 16px 0px;
+}
+
+#header h1 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 166px;
+	height: 30px;
+	background: transparent url("https://s.yimg.com/sf/mobileAR/img/yahoo-logo.png") no-repeat 50% 50%;
+	background-size: contain;
+	margin: 0px auto;
+	overflow: hidden;
+	text-indent: -99em;
+}
+
+#main {
+	position: relative;
+	padding: 16px;
+}
+
+a {
+	color: #0063dc;
+}
+
+h2 {
+	color: #333;
+	margin: 0px;
+	padding: 0px;
+	font-size: 155%;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 12px;
+}
+
+p.compact {
+	margin-bottom: 0px;
+}
+
+#top-message {
+	min-height: 80px;
+}
+
+.copy-block {
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 24px;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.prominent {
+	font-size: 155%;
+	font-weight: 500;
+	text-shadow: 1px 1px 0px #fff;
+	padding-top: 8px;
+	padding-bottom: 32px;
+}
+
+.aside {
+	margin-top: 24px;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.aside p {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em;
+}
+
+.message {
+	position: relative;
+	background: #fff;
+	border-radius: 3px;
+	padding: 16px 16px 8px 16px;
+	margin-bottom: 24px;
+}
+
+/*
+.message p:last-of-type {
+	margin-bottom: 0px;
+}
+*/
+
+ul.actions-list li a {
+	position: relative;
+	background: rgb(233,235,236);
+	background-image: linear-gradient(bottom, #e4e6e8 0%, #f2f3f4 100%);
+	background-image: -o-linear-gradient(bottom, #e4e6e8 0%, #f2f3f4 100%);
+	background-image: -moz-linear-gradient(bottom, #e4e6e8 0%, #f2f3f4 100%);
+	background-image: -webkit-linear-gradient(bottom, #e4e6e8 0%, #f2f3f4 100%);
+	background-image: -ms-linear-gradient(bottom, #e4e6e8 0%, #f2f3f4 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #e4e6e8),
+		color-stop(1, #f2f3f4)
+	);
+	border: 1px solid #d1d7dc;
+	box-shadow: 1px 1px 2px #d1d4d4;
+	text-shadow: 1px 1px 0px #fff;
+	border-radius: 2px;
+	padding: 24px 12px 24px 12px;
+}
+
+form {
+	display: block;
+}
+
+.field-wrapper {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(0,0,0,0.25);
+	border-left: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	padding: 8px;
+	margin-bottom: 24px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+.help-link-wrapper {
+	position: relative;
+	padding-right: 46px;
+}
+
+.view-link-wrapper {
+	position: relative;
+	padding-right: 72px;
+}
+
+.input-field {
+	background: transparent;
+	border: none;
+	display: block;
+	font-size: 125%;
+	width: 100%;
+	margin: 0px;
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+.help {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	margin-right: 6px;
+	margin-top: -16px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	background: #eee;
+	font-size: 150%;
+	color: #333;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.help:focus {
+	outline: none;
+}
+
+.help-content {
+	position: absolute;
+	width: 55%;
+	z-index: 3;
+	min-width: 200px;
+	max-width: 25em;
+	font-size: 100%;
+	right: 0px;
+	margin-top: 0.85em;
+	margin-right: -20px;
+	background: rgb(81,87,92);
+	background-image: linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -o-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -moz-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -ms-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #3F4549),
+		color-stop(1, #656C72)
+	);
+	border-radius: 3px;
+	color: #fff;
+	padding: 16px;
+	line-height: 1.4em;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	
+	display: none;
+}
+
+.help-content p {
+	margin: 0px;
+}
+
+.help:focus,
+.help:active {
+	background: #ccc;
+}
+
+.help:active + .help-content,
+.help:focus + .help-content {
+	/* on touch/focus, show the adjacent tip in the markup. */
+	display: block;
+}
+
+.view-link {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	margin-right: 6px;
+	margin-top: -16px;
+	display: inline-block;
+	min-width: 60px;
+	height: 30px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+	background: #eee;
+	line-height: 30px;
+	color: #333;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+	text-align: center;
+	text-decoration: none;
+}
+
+.view-link .active,
+.view-link.active .default {
+	display: none;
+}
+
+.view-link.active .active {
+	display: inline;
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	text-align: center;
+	width: 40%;
+	min-width: 112px;
+	max-width: 200px;
+	margin-right: 16px;
+	vertical-align: top;
+	/* in the event this is applied to a link... */
+	text-decoration: none;
+}
+
+input.btn {
+	padding: 0px;
+	border: none;
+}
+
+.btn:last-child {
+	/* no right margin on the last button */
+	margin-right: 0px;
+}
+
+.btn-cancel {
+	background: #787D81;
+	background-image: linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -o-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -moz-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -ms-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #3F4549),
+		color-stop(1, #656C72)
+	);
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+}
+
+.btn-next {
+	background: #753C9C;
+	background-image: linear-gradient(bottom, #66308D 0%, #8B4DB5 100%);
+	background-image: -o-linear-gradient(bottom, #66308D 0%, #8B4DB5 100%);
+	background-image: -moz-linear-gradient(bottom, #66308D 0%, #8B4DB5 100%);
+	background-image: -webkit-linear-gradient(bottom, #66308D 0%, #8B4DB5 100%);
+	background-image: -ms-linear-gradient(bottom, #66308D 0%, #8B4DB5 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #66308D),
+		color-stop(1, #8B4DB5)
+	);
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+	font-size: 19px;
+}
+
+.btn,
+input.btn {
+	line-height: 40px;
+	height: 40px;
+}
+
+.btn-wide {
+	width: 100%;
+	max-width: 190px;
+}
+
+.contact {
+	color: #f05911;
+}
+
+.wedge {
+	/**
+	 * "divot" / "pointy arrow"
+	 * by default, bottom/left + 25%
+	 */
+	position: absolute;
+	bottom: 0px;
+	left: 33%;
+	width: 14px;
+	height: 14px;
+	margin-bottom: -7px;
+	background: #fff;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	/* sit underneath box, too */
+	z-index: -1;
+}
+
+.wedge-dark {
+	/* by default, sit right. */
+	background: rgb(101,108,114);
+	width: 8px;
+	height: 8px;
+	bottom: auto;
+	top: 0px;
+	margin-bottom: 0px;
+	margin-top: -4px;
+	left: auto;
+	right: 38px;
+}
+
+ul.actions-list {
+	list-style-type: none;
+}
+
+ul.actions-list,
+ul.actions-list li {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.actions-list {
+	margin: 16px 0px;
+}
+
+ul.actions-list li a {
+	position: relative;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 30px;
+	color: #343d47;
+	font-size: 105%;
+	line-height: 50px;
+	text-decoration: none;
+	font-weight: 500;
+	padding-right: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+ul.actions-list li a:active {
+	background-color: #ccc;
+}
+
+ul.actions-list li a .arrow {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	margin-right: 16px;
+	margin-top: -7px;
+	line-height: 55px;
+	overflow: hidden;
+	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPCAYAAAAyPTUwAAABW0lEQVR42n2Ozy9CAQDHO/sLOMgaRRHtydCYHxmljFJtDuYPkNlzsJas1lRPUziwGdPJIfOSrFUvsbUx4hSubdywuWR+nL7eMqfX63v+fL7fr+A/lD2EcCgFQaV8FD/hte1DXGUEUT2DWDjLL2TityxoRo/Iit46EqraWcSPLssL318/2PJE0V2zAK3UBXWDHX0iEvHDK/6FHV8C/cIljMlXoGl0Qi1ZRDJywy/s+RkMiVwwtFHQN3sw0mRHgq4g7PrT0Et9MLUHMC6noJM7kTrO8QveeZoVKEx1bkIvo2DpovBceOUKZ7E7GJRuTBJrMCoCsCjXcR574IJMNIdBCQmNzMH+9sNEBJE5ueeCCfq6BGpbHJhQrLKfg7g4feSCyUgOA2ISoyxoYEEzwYLlprNMHiqhFbrW5b/GElhq5Oap8II50zaG692wdGxwGjl5fyvCNn2ANJ2vCP4CshvHuD0xsPUAAAAASUVORK5CYII=) no-repeat 50% 50%;
+	/* TODO: Retina-ized version. */
+	width: 11px;
+	height: 15px;
+	text-indent: -99em;
+}
+
+#password-progress {
+	margin-top: -22px;
+	margin-bottom: 24px;
+}
+
+#password-progress .progress-bar {
+	/* visibility: hidden; */
+	opacity: 0;
+	-moz-transition: all 0.2s ease-in-out;
+	-moz-transition-property: opacity;
+	-webkit-transition: all 0.2s ease-in-out;
+	-webkit-transition-property: opacity;
+	transition: all 0.2s ease-in-out;
+	transition-property: opacity;
+}
+
+#password-progress.password-short .progress-bar,
+#password-progress.password-still-short .progress-bar,
+#password-progress.password-weak .progress-bar,
+#password-progress.password-strong .progress-bar,
+#password-progress.password-super  .progress-bar {
+	/* visibility: visible; */
+	opacity: 1;
+}
+
+#password-messages,
+#password-messages li,
+#password-messages li p {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#password-messages {
+	min-height: 1.55em;
+}
+
+#password-messages li p {
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+#password-progress .progress-bar {
+	position: relative;
+	top: 1px;
+	margin: 4px 6px;
+	height: 2px;
+	background: #fff;
+}
+
+#password-progress .progress-bar .progress-color {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	background-color: #fff;
+	width: 0%;
+	/* and a little fun... */
+	-moz-transition: all 0.33s ease-in-out;
+	-moz-transition-property: width, box-shadow, background-color;
+	-webkit-transition: all 0.33s ease-in-out;
+	-webkit-transition-property: width, box-shadow, background-color;
+	transition: all 0.33s ease-in-out;
+	transition-property: width, box-shadow, background-color;
+}
+
+#password-progress #password-messages li {
+	display: none;
+}
+
+#password-progress #password-messages li.password-default {
+	/* show this one by default. */
+	display: block;
+}
+
+#password-progress.password-short #password-messages li.password-default,
+#password-progress.password-still-short #password-messages li.password-default,
+#password-progress.password-weak #password-messages li.password-default,
+#password-progress.password-strong #password-messages li.password-default,
+#password-progress.password-super #password-messages li.password-default {
+	/* when an other class is present, hide the default state. */
+	display: none;
+}
+
+
+#password-progress.password-short #password-messages li.password-short,
+#password-progress.password-still-short #password-messages li.password-still-short,
+#password-progress.password-weak #password-messages li.password-weak,
+#password-progress.password-strong #password-messages li.password-strong,
+#password-progress.password-super #password-messages li.password-super {
+	display: block;
+}
+
+#password-progress.password-short .progress-color {
+	/* could be made incremental as more characters are typed, etc. */
+	width: 5%;
+}
+
+#password-progress.password-short .progress-color,
+#password-progress.password-still-short .progress-color {
+	background-color: #e81f43;
+	box-shadow: 0px 0px 1px #e81f43;
+}
+
+#password-progress.password-still-short .progress-color {
+	width: 25%;
+}
+
+#password-progress.password-weak .progress-color {
+	background-color: #f49021;
+	box-shadow: 0px 0px 1px #f49021;
+	width: 50%;
+}
+
+#password-progress.password-strong .progress-color {
+	width: 75%;
+}
+
+#password-progress.password-strong .progress-color,
+#password-progress.password-super .progress-color {
+	background-color: #01a34e;
+	box-shadow: 0px 0px 1px #01a34e;
+}
+
+#password-progress.password-super .progress-color {
+	width: 100%;
+}
+
+
+.link {
+	top: 50%;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	background: #eee;
+	font-size: 100%;
+/*	color: #333;*/
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.link:focus {
+	outline: none;
+}
+
+.link-content {
+	width: 55%;
+	z-index: 3;
+	min-width: 200px;
+	max-width: 25em;
+	font-size: 100%;
+	right: 0px;
+	background: rgb(81,87,92);
+	background-image: linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -o-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -moz-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -ms-linear-gradient(bottom, #3F4549 0%, #656C72 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #3F4549),
+		color-stop(1, #656C72)
+	);
+	border-radius: 3px;
+	color: #fff;
+	padding: 16px;
+	line-height: 1.4em;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	
+	display: none;
+}
+
+
+.link-content p {
+	margin: 0px;
+}
+
+
+.link:active + .link-content,
+.link:focus + .link-content {
+	/* on touch/focus, show the adjacent tip in the markup. */
+	display: block;
+}
+
+.linkbox {
+	padding-left: 12px;
+    	padding-right: 12px;
+}
+
+.linkbox p {
+        margin: 0px;
+        padding: 0px;
+        line-height: 1.5em;
+}
+
+
+.linkwedge {
+        position: absolute;
+        bottom: 0px; 
+	left: 33%;
+        width: 14px;
+        height: 14px;
+        margin-bottom: -7px;
+        background: #fff;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        /* sit underneath box, too */
+        z-index: -1;
+}
+
+.linkwedge-dark {
+        /* by default, sit right. */
+        background: rgb(101,108,114);
+        width: 8px;
+        height: 8px;
+        bottom: auto;
+        top: 191px;
+        margin-bottom: 0px;
+        margin-top: -4px;
+        left: auto;
+       /* right: 38px;*/
+	position: absolute;
+}
+

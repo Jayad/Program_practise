@@ -1,0 +1,21 @@
+<?php
+$mobile="408349-5628";
+          $r = $mobile;
+	#  $mobile = str_replace(' ','',$mobile);
+          if(strlen($mobile) > 4) {
+		  $lastdigit =  substr($mobile, -5) ;
+		if (preg_match("/[^0-9^]/",$lastdigit) == TRUE) { $star="****";
+	#	  $lastdigit = preg_replace('/\s+/',' ',$lastdigit);
+#		$lastdigit=trim($lastdigit); 
+			 echo $lastdigit;
+			echo "\n";
+                 $r = substr($mobile, 0, strlen($mobile) - 6);
+                 $r = $r . "*" . " " .$star;
+		}
+		else 
+		{$r = substr($mobile, 0, strlen($mobile) - 5);
+                 $r = $r . "*****";}
+
+          echo $r;
+  }
+?>
