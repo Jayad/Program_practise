@@ -3,5 +3,7 @@
 <title>Just Starting</title>
 </head>
 <body>
-<?php echo "What I am doing here?\n" ?>
+<?php echo "What I am doing here?";
+ echo "\n \r" . "Oh lord" ;
+?>
 </html>

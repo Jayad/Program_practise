@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function checkfunc(){
+	var tempstring = "" ;
+	try{
+ 	   addfunct(name);
+	}
+	catch(err) {
+	 tempstring="The above function is not defined.";
+	 tempstring += err.message;
+	 alert(tempstring);
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" value="Check function existance" onclick="checkfunc()";></>
+</body>
+</html>

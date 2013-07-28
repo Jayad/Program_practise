@@ -12,4 +12,12 @@ var text="I am having a bored life, oh God please do something and nothing"; tex
 var add = function (a) {return function(b){return a+b;};}; var addfive =add(5);console.log(addfive(10)); // this is called closure, u can understand like this add(5(10)); a=5, then b=10 here
 try {JSON.parse("a");}catch(error){error.message;} //Try catch block in JS
 throw new Error("I hungry. Fridge empty."); //Creating own Error
+var fruits=["Banana", "Apples", "Guava", "Litchi", "Mango"];console.log(fruits.toString());
+//Banana,Apples,Guava,Litchi,Mango
+ var fruits=["Banana", "Apples", "Guava", "Litchi", "Mango"]; var number=["one", "two", "three"]; console.log(fruits.concat(number));
+//["Banana", "Apples", "Guava", "Litchi", "Mango", "one", "two", "three"]
+var fruits=["Banana", "Apples", "Guava", "Litchi", "Mango"]; fruits.splice(1,0,"lemon","cherry"); console.log(fruits);
+//["Banana", "lemon", "cherry", "Apples", "Guava", "Litchi", "Mango"]
+var num=15;n=num.valueOf();console.log(n);
+//15
 </script>
