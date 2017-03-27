@@ -1,0 +1,53 @@
+There are buildings in a certain two-dimensional landscape. Each building has a height given by hi. If you join adjacent buildings, they will form a solid rectangle of area .
+
+Given buildings, find the greatest such solid area formed by consecutive buildings.
+
+Input Format
+The first line contains , the number of buildings altogether.
+The second line contains space-separated integers, each representing the height of a building.
+
+Constraints
+1<N<10^6
+1<hi<10^6
+
+Output Format
+One integer representing the maximum area of rectangle formed. 
+=============================================================================================================
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+     int house=N;
+    int arrhouse[house]=h[N]={1,2,3,4,5};
+    //cout << "Enter no of houses" << endl;
+    //cin >> house;
+    //cout << "Enter heights of Houses" << endl;
+   // for(int i=0;i<house;i++)
+     //   cin >> arrhouse[i];
+
+    int max_multi=0;
+    int multi_so_far=0;
+    //int count=1;
+    int min=0;
+    for(int i=0;i<house;i++)
+        {
+        int count=1;
+          for(int j=i+1;j<house;j++){
+                count++;
+                min=(arrhouse[i]<arrhouse[j])?arrhouse[i]:arrhouse[j];
+                multi_so_far=count*arrhouse[i];
+                if(max_multi<multi_so_far)
+                        max_multi= multi_so_far;
+        }
+    }
+    cout << max_multi;
+    return 0;
+}
